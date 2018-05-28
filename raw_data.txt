@@ -1,0 +1,8 @@
+you can find raw data from ROADART measurements to the following ftp server:
+
+ftp://195.251.236.87:21
+
+Username:roadart_common
+password:W27Z)"
+
+The domain is controlled and monitored by University of Piraeus. 
