@@ -22,11 +22,11 @@ linkParams.total_num_v2v_scatterers = sum(linkParams.actives_v2v,1);
 
 step = linkParams.vehicular_sampling_period/linkParams.time_sampling_period;
 
+
 %% Initialize results:
 for ll= 1 : size_time
     time = linkParams.time_axis(ll);
     kk = floor(time/linkParams.vehicular_sampling_period)+1;
-
     results(ll).static_ids = find(linkParams.actives_buildings(:,kk)==1);
     results(ll).static_phi_aods = zeros(linkParams.total_num_building_scatterers(kk), 1);
     results(ll).static_phi_aoas = zeros(linkParams.total_num_building_scatterers(kk), 1);
